@@ -25,7 +25,8 @@ Task router follow the following url path `{root URL}/api/v1/task`. More details
 
 | 2. | `/` | GET | false | This api allows client tofetch data from database |
 
-| 3. | `/` | PATCH | false | This api allows client switch the task type in database |
+| 3. | `/` | PATCH | false | This api allows client switch the task type in database. client must send data in the following structure`{_id: "abc", type: "bad or entry"}`
+|
 
 | 4. | `/:_id` | DELETE | false | This api allows client to delete the selected task based on the given `_id` database |
 

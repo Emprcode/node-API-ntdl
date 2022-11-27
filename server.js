@@ -16,7 +16,7 @@ app.use("/api/v1/task", taskRouter);
 // handle all uncaught router request 
 app.use('*', (req, res, next) => {
     const error = {
-        status: 404,
+        code: 404,
         message: "404 message not found"
     }
     next(error);
