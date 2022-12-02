@@ -3,6 +3,11 @@ import express from 'express'
 const app = express();
 const PORT = 8000;
 
+// db connect
+
+import mongoConnect from './src/config/dbConfig.js'
+mongoConnect();
+
 // middleware
 
 app.use(express.json())
