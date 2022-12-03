@@ -11,7 +11,7 @@ router.post("/", async(req, res, next) => {
 
   if(result ?._id){
     return  res.json({
-      status: "Success",
+      status: "success",
       message: "New task has been added",
     });
   }
