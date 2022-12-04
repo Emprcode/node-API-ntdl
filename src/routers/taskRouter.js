@@ -73,7 +73,8 @@ router.patch("/", async (req, res, next) => {
 // router.delete("/:_id", (req, res, next) => {
 router.delete("/", async (req, res, next) => {
   const _idArg = req.body;
-  // console.log(_idArg);
+  console.log(_idArg);
+ 
 
   //replace following code by calling db module
   try {
